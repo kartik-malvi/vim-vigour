@@ -7,6 +7,7 @@ $primary-font: "Bebas Neue";
 $secondary-font: "PT Mono";
 $text-font: "Cabin";
 
+
 * {
   margin: 0;
   padding: 0;
@@ -366,6 +367,33 @@ body {
           }
         }
       }
+    }
+  }
+  // section4
+  .section4{
+    text-align: center;
+    h2{
+      font-size: 2em;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+    form{
+     input{
+      margin: 2rem;
+      background-color:$primary-clr;
+      border: none;
+      border-bottom: 1px solid $heading-clr;
+      padding-bottom:1rem;
+      font-size: 1em;
+      font-family: $secondary-font;
+     }
+     button{
+      background-color: $primary-clr;
+      border: none;
+      border-bottom: 1px solid red;
+      padding: 0.5rem;
+      color: $text-clr;
+     }
     }
   }
 }
