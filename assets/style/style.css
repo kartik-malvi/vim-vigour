@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #2e2d33;
+}
+body h1 {
+  font-size: 2.5em;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #fbfbfb;
+}
+body h2 {
+  font-size: 1.5em;
+  color: "Bebas Neue";
+  text-transform: uppercase;
+  font-family: "PT Mono";
+  color: #fbfbfb;
+}
+body p {
+  font-size: 1.1em;
+  line-height: 1.876rem;
+  color: #89888c;
+  font-family: "Cabin";
+}
+body .container {
+  width: 80%;
+  height: auto;
+  margin-inline: auto;
+  padding: 2rem;
+}
+body .flex {
+  display: flex;
+}
+body .grid {
+  display: grid;
+}
+body img {
+  width: auto;
+  position: relative;
+}
+body header {
+  width: 100%;
+  height: auto;
+  padding: 2.5rem 0;
+}
+body header .grid {
+  width: 100%;
+  grid-template-columns: 10% 70% 20%;
+  grid-template-rows: repeat(2);
+  margin-inline: auto;
+  border: 1px solid #fbfbfb;
+  border-top: none;
+  padding: 0;
+}
+body header .grid .grid-box {
+  border: 1px solid #fbfbfb;
+}
+body header .grid .grid-box h5 {
+  font-family: "Bebas Neue";
+  letter-spacing: 2px;
+}
+body header .grid .grid-box:nth-child(1) {
+  display: flex;
+  grid-row: 1/3;
+  border-top: none;
+  align-items: center;
+  justify-content: center;
+}
+body header .grid .grid-box:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+  border-top: none;
+}
+body header .grid .grid-box:nth-child(2) h5 {
+  font-size: 0.9em;
+  color: #fbfbfb;
+}
+body header .grid .grid-box:nth-child(2) img {
+  width: 20px;
+  margin: 0 1rem;
+}
+body header .grid .grid-box:nth-child(3) {
+  border-top: none;
+}
+body header .grid .grid-box:nth-child(3) ul {
+  display: flex;
+  justify-content: center;
+}
+body header .grid .grid-box:nth-child(3) ul li {
+  margin: 0 1.3rem;
+}
+body header .grid .grid-box:nth-child(3) img {
+  width: 20px;
+}
+body header .grid .grid-box:nth-child(4) {
+  grid-column: 2/4;
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  border: none;
+}
+body header .grid .grid-box:nth-child(4) nav {
+  padding: 1rem;
+  margin-inline: auto;
+}
+body header .grid .grid-box:nth-child(4) nav .nav-items ul li {
+  display: inline-block;
+  margin: 0 3.5rem;
+}
+body header .grid .grid-box:nth-child(4) nav .nav-items ul li a {
+  color: #89888c;
+}
+body .hero {
+  width: 100%;
+  height: auto;
+}
+body .hero .hero-heading .flex {
+  border: none;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  position: relative;
+}
+body .hero .hero-heading .flex .about-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .hero .hero-heading .flex .flex-box-1 {
+  flex-basis: 30%;
+  border: 1px solid #89888c;
+  border-left: none;
+  border-right: none;
+  height: 300px;
+  justify-items: center;
+}
+body .hero .hero-heading .flex .flex-box-1 img {
+  display: block;
+  margin: 0 auto;
+  width: 55%;
+}
+body .hero .hero-heading .flex .flex-box-2 {
+  position: relative;
+  flex-basis: 50%;
+  text-align: center;
+  border: 1px solid #89888c;
+  height: 300px;
+  padding: 4rem;
+}
+body .hero .hero-heading .flex .flex-box-2 .none-border {
+  width: auto;
+  padding: 0.2rem 0;
+  border: 1px solid #89888c;
+  border-top: none;
+  border-bottom: none;
+  background-color: #2e2d33;
+  width: 35%;
+  margin-inline: auto;
+  position: absolute;
+  top: -5%;
+  left: 32%;
+  font-size: 1em;
+  color: #fbfbfb;
+  text-transform: uppercase;
+  font-family: "PT Mono";
+}
+body .hero .hero-heading .flex .flex-box-3 {
+  flex-basis: 30%;
+  height: 300px;
+  border: 1px solid #89888c;
+  border-left: none;
+  border-right: none;
+}
+body .hero .hero-heading .flex .flex-box-3 img {
+  display: block;
+  margin: 0 auto;
+  width: 55%;
+}
+body .hero .hero-heading .flex .flex-box-3 .col-1,
+body .hero .hero-heading .flex .flex-box-3 .col-2 img {
+  padding: 2rem;
+}
+body .hero .hero-heading .flex .flex-box-3 .col-1 {
+  border-bottom: 1px solid #89888c;
+}
+body .section2 {
+  width: 100%;
+  height: auto;
+}
+body .section2 h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  font-family: "Bebas Neue";
+  letter-spacing: 5px;
+}
+body .section3 {
+  width: 100%;
+  height: auto;
+}
+body .section3 .container .grid {
+  grid-template-columns: 40% 30% 30%;
+  grid-template-rows: repeat(3, auto);
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #89888c;
+  border-bottom: 1px solid #89888c;
+}
+body .section3 .container .grid .grid-box-1 {
+  width: 100%;
+  height: 80%;
+  margin-inline: auto;
+  grid-row: 1/4;
+  text-align: center;
+}
+body .section3 .container .grid .grid-box-1 .product-name h4 {
+  font-size: 2em;
+  margin-bottom: 2rem;
+  color: #fbfbfb;
+  font-family: "Bebas Neue";
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+body .section3 .container .grid .grid-box-1 .product-img img {
+  display: block;
+  margin: 0 auto;
+}
+body .section3 .container .grid .grid-box-1 .product-description {
+  margin-top: 2rem;
+}
+body .section3 .container .grid .grid-box-1 .product-description h5 {
+  font-size: 1em;
+  color: #fbfbfb;
+  font-family: "PT Mono";
+  line-height: 1.5rem;
+}
+body .section3 .container .grid .grid-box-1 .product-description p {
+  font-size: 1em;
+  font-family: "PT Mono";
+}
+body .section3 .container .grid .grid-box-1 .button {
+  margin-top: 1rem;
+}
+body .section3 .container .grid .grid-box-1 .button a {
+  color: #89888c;
+  border-bottom: 1px solid red;
+  padding-bottom: 0.5rem;
+}
+body .section3 .container .grid .grid-box-2 {
+  border-left: 1px solid #89888c;
+  padding: 2rem 5.3rem;
+  grid-row: 1/2;
+  border-right: 1px solid #89888c;
+  margin-inline: auto;
+}
+body .section3 .container .grid .grid-box-3 {
+  padding: 2rem;
+  margin-inline: auto;
+  grid-row: 1/3;
+}
+body .section3 .container .grid .grid-box-4 {
+  padding: 2rem 5.1rem;
+  margin-inline: auto;
+  grid-row: 2/3;
+  border-left: 1px solid #89888c;
+  border-right: 1px solid #89888c;
+  border-top: 1px solid #89888c;
+}
+body .section3 .container .grid .grid-box-5 {
+  width: 650px;
+  padding: 2rem;
+  grid-row: 3/4;
+  grid-column: 2/4;
+  margin-inline: auto;
+  border-top: 1px solid #89888c;
+  border-left: 1px solid #89888c;
+}
+body .section3 .container .grid .grid-box-5 h3 {
+  color: #fbfbfb;
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+  letter-spacing: 2px;
+  font-size: 1.5em;
+  line-height: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
