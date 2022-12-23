@@ -55,12 +55,12 @@ body header .grid {
   grid-template-columns: 10% 70% 20%;
   grid-template-rows: repeat(2);
   margin-inline: auto;
-  border: 1px solid #fbfbfb;
+  border: 2px solid #89888c;
   border-top: none;
   padding: 0;
 }
 body header .grid .grid-box {
-  border: 1px solid #fbfbfb;
+  border: 2px solid #89888c;
 }
 body header .grid .grid-box h5 {
   font-family: "Bebas Neue";
@@ -72,11 +72,15 @@ body header .grid .grid-box:nth-child(1) {
   border-top: none;
   align-items: center;
   justify-content: center;
+  border-left: none;
+  border-bottom: none;
 }
 body header .grid .grid-box:nth-child(2) {
   display: flex;
   justify-content: flex-end;
   border-top: none;
+  border-left: none;
+  border-right: none;
 }
 body header .grid .grid-box:nth-child(2) h5 {
   font-size: 0.9em;
@@ -87,6 +91,7 @@ body header .grid .grid-box:nth-child(2) img {
   margin: 0 1rem;
 }
 body header .grid .grid-box:nth-child(3) {
+  border-right: none;
   border-top: none;
 }
 body header .grid .grid-box:nth-child(3) ul {
@@ -136,7 +141,7 @@ body .hero .hero-heading .flex .about-box {
 }
 body .hero .hero-heading .flex .flex-box-1 {
   flex-basis: 30%;
-  border: 1px solid #89888c;
+  border: 2px solid #89888c;
   border-left: none;
   border-right: none;
   height: 300px;
@@ -151,14 +156,14 @@ body .hero .hero-heading .flex .flex-box-2 {
   position: relative;
   flex-basis: 50%;
   text-align: center;
-  border: 1px solid #89888c;
+  border: 2px solid #89888c;
   height: 300px;
   padding: 4rem;
 }
 body .hero .hero-heading .flex .flex-box-2 .none-border {
   width: auto;
   padding: 0.2rem 0;
-  border: 1px solid #89888c;
+  border: 2px solid #89888c;
   border-top: none;
   border-bottom: none;
   background-color: #2e2d33;
@@ -175,7 +180,7 @@ body .hero .hero-heading .flex .flex-box-2 .none-border {
 body .hero .hero-heading .flex .flex-box-3 {
   flex-basis: 30%;
   height: 300px;
-  border: 1px solid #89888c;
+  border: 2px solid #89888c;
   border-left: none;
   border-right: none;
 }
@@ -189,7 +194,7 @@ body .hero .hero-heading .flex .flex-box-3 .col-2 img {
   padding: 2rem;
 }
 body .hero .hero-heading .flex .flex-box-3 .col-1 {
-  border-bottom: 1px solid #89888c;
+  border-bottom: 2px solid #89888c;
 }
 body .section2 {
   width: 100%;
@@ -210,8 +215,8 @@ body .section3 .container .grid {
   grid-template-rows: repeat(3, auto);
   align-items: center;
   justify-content: center;
-  border-top: 1px solid #89888c;
-  border-bottom: 1px solid #89888c;
+  border-top: 2px solid #89888c;
+  border-bottom: 2px solid #89888c;
 }
 body .section3 .container .grid .grid-box-1 {
   width: 100%;
@@ -250,14 +255,14 @@ body .section3 .container .grid .grid-box-1 .button {
 }
 body .section3 .container .grid .grid-box-1 .button a {
   color: #89888c;
-  border-bottom: 1px solid red;
+  border-bottom: 2px solid red;
   padding-bottom: 0.5rem;
 }
 body .section3 .container .grid .grid-box-2 {
-  border-left: 1px solid #89888c;
+  border-left: 2px solid #89888c;
   padding: 2rem 5.3rem;
   grid-row: 1/2;
-  border-right: 1px solid #89888c;
+  border-right: 2px solid #89888c;
   margin-inline: auto;
 }
 body .section3 .container .grid .grid-box-3 {
@@ -269,9 +274,9 @@ body .section3 .container .grid .grid-box-4 {
   padding: 2rem 5.1rem;
   margin-inline: auto;
   grid-row: 2/3;
-  border-left: 1px solid #89888c;
-  border-right: 1px solid #89888c;
-  border-top: 1px solid #89888c;
+  border-left: 2px solid #89888c;
+  border-right: 2px solid #89888c;
+  border-top: 2px solid #89888c;
 }
 body .section3 .container .grid .grid-box-5 {
   width: 650px;
@@ -279,8 +284,8 @@ body .section3 .container .grid .grid-box-5 {
   grid-row: 3/4;
   grid-column: 2/4;
   margin-inline: auto;
-  border-top: 1px solid #89888c;
-  border-left: 1px solid #89888c;
+  border-top: 2px solid #89888c;
+  border-left: 2px solid #89888c;
 }
 body .section3 .container .grid .grid-box-5 h3 {
   color: #fbfbfb;
@@ -291,6 +296,8 @@ body .section3 .container .grid .grid-box-5 h3 {
   line-height: 2rem;
 }
 body .section4 {
+  width: 100%;
+  height: auto;
   text-align: center;
 }
 body .section4 h2 {
@@ -299,20 +306,118 @@ body .section4 h2 {
   text-transform: uppercase;
 }
 body .section4 form input {
+  width: 22%;
   margin: 2rem;
   background-color: #2e2d33;
   border: none;
-  border-bottom: 1px solid #fbfbfb;
+  border-bottom: 2px solid #fbfbfb;
   padding-bottom: 1rem;
   font-size: 1em;
   font-family: "PT Mono";
 }
+body .section4 form input:focus-visible {
+  outline: none;
+  color: #fbfbfb;
+  font-family: "PT Mono";
+}
+body .section4 form input[type=text]:focus-within {
+  color: #fbfbfb;
+}
 body .section4 form button {
   background-color: #2e2d33;
   border: none;
-  border-bottom: 1px solid red;
+  border-bottom: 2px solid red;
   padding: 0.5rem;
   color: #89888c;
+}
+body .section5 {
+  width: 100%;
+  height: auto;
+}
+body .section5 .container {
+  padding-bottom: 0;
+}
+body .section5 .container .flex {
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid #89888c;
+  border-bottom: 2px solid #89888c;
+}
+body .section5 .container .flex .flex-box-1 {
+  flex-basis: 30%;
+  border-right: 2px solid #89888c;
+  padding: 3.1rem;
+}
+body .section5 .container .flex .flex-box-1 img {
+  display: block;
+  margin: 0 auto;
+}
+body .section5 .container .flex .flex-box-2 {
+  flex-basis: 30%;
+  margin-inline: auto;
+  text-align: center;
+}
+body .section5 .container .flex .flex-box-2 h3 {
+  color: #fbfbfb;
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+  letter-spacing: 2px;
+  font-size: 1.5em;
+  line-height: 2rem;
+}
+body .section5 .container .flex .flex-box-3 {
+  flex-basis: 30%;
+  margin-inline: auto;
+  border-left: 2px solid #89888c;
+  padding: 2.3rem;
+}
+body .section5 .container .flex .flex-box-3 img {
+  display: block;
+  margin: 0 auto;
+}
+body footer {
+  width: 100%;
+  height: auto;
+}
+body footer .container {
+  padding-top: 0;
+}
+body footer .container .flex {
+  align-items: center;
+  border-bottom: 2px solid #89888c;
+}
+body footer .container .flex .flex-box-1 {
+  border-right: 2px solid #89888c;
+  padding: 1rem;
+  flex-basis: 50%;
+}
+body footer .container .flex .flex-box-1 h4 {
+  font-size: 1.5em;
+  color: #fbfbfb;
+  font-family: "Bebas Neue";
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+body footer .container .flex .flex-box-2 {
+  padding: 1.4rem;
+  flex-basis: 30%;
+  border-right: 2px solid #89888c;
+}
+body footer .container .flex .flex-box-2 h5 {
+  font-family: "Bebas Neue";
+  letter-spacing: 2px;
+  color: #fbfbfb;
+  text-align: right;
+}
+body footer .container .flex .flex-box-3 ul {
+  margin-left: 2rem;
+}
+body footer .container .flex .flex-box-3 ul li {
+  display: inline;
+  margin: 0 0.5rem;
+}
+body footer .container .flex .flex-box-3 ul li img {
+  width: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

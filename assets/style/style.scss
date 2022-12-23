@@ -7,7 +7,6 @@ $primary-font: "Bebas Neue";
 $secondary-font: "PT Mono";
 $text-font: "Cabin";
 
-
 * {
   margin: 0;
   padding: 0;
@@ -74,12 +73,13 @@ body {
       grid-template-columns: 10% 70% 20%;
       grid-template-rows: repeat(2);
       margin-inline: auto;
-      border: 1px solid $heading-clr;
+      border: 2px solid $text-clr;
       border-top: none;
       padding: 0;
 
       .grid-box {
-        border: 1px solid $heading-clr;
+        border: 2px solid $text-clr;
+        
 
         h5 {
           font-family: $primary-font;
@@ -92,12 +92,16 @@ body {
           border-top: none;
           align-items: center;
           justify-content: center;
+          border-left: none;
+        border-bottom: none;
         }
 
         &:nth-child(2) {
           display: flex;
           justify-content: flex-end;
           border-top: none;
+          border-left: none;
+          border-right: none;
 
           h5 {
             font-size: 0.9em;
@@ -111,13 +115,13 @@ body {
         }
 
         &:nth-child(3) {
+          border-right: none;
           ul {
             display: flex;
             justify-content: center;
 
             li {
-              margin:0 1.3rem;
-              
+              margin: 0 1.3rem;
             }
           }
 
@@ -175,7 +179,7 @@ body {
 
         .flex-box-1 {
           flex-basis: 30%;
-          border: 1px solid $text-clr;
+          border: 2px solid $text-clr;
           border-left: none;
           border-right: none;
           height: 300px;
@@ -198,14 +202,14 @@ body {
           position: relative;
           flex-basis: 50%;
           text-align: center;
-          border: 1px solid $text-clr;
+          border: 2px solid $text-clr;
           height: 300px;
           padding: 4rem;
 
           .none-border {
             width: auto;
             padding: 0.2rem 0;
-            border: 1px solid $text-clr;
+            border: 2px solid $text-clr;
             border-top: none;
             border-bottom: none;
             background-color: $primary-clr;
@@ -224,7 +228,7 @@ body {
         .flex-box-3 {
           flex-basis: 30%;
           height: 300px;
-          border: 1px solid $text-clr;
+          border: 2px solid $text-clr;
           border-left: none;
           border-right: none;
 
@@ -240,7 +244,7 @@ body {
           }
 
           .col-1 {
-            border-bottom: 1px solid $text-clr;
+            border-bottom: 2px solid $text-clr;
           }
         }
       }
@@ -272,8 +276,8 @@ body {
         grid-template-rows: repeat(3, auto);
         align-items: center;
         justify-content: center;
-        border-top: 1px solid $text-clr;
-        border-bottom: 1px solid $text-clr;
+        border-top: 2px solid $text-clr;
+        border-bottom: 2px solid $text-clr;
 
         .grid-box-1 {
           width: 100%;
@@ -289,80 +293,72 @@ body {
               font-family: $primary-font;
               letter-spacing: 2px;
               font-weight: 300;
-             
             }
           }
-          .product-img{
-            img{
+          .product-img {
+            img {
               display: block;
-            margin: 0 auto;
+              margin: 0 auto;
             }
           }
-          .product-description{
-            margin-top:2rem;
-           
-            h5{
+          .product-description {
+            margin-top: 2rem;
+
+            h5 {
               font-size: 1em;
               color: $heading-clr;
               font-family: $secondary-font;
               line-height: 1.5rem;
-             
-             
             }
-            p{
+            p {
               font-size: 1em;
               font-family: $secondary-font;
             }
-          
           }
-          .button{
+          .button {
             margin-top: 1rem;
-            
-            a{
-             color: $text-clr;
-             border-bottom: 1px solid red;
-             padding-bottom: 0.5rem;
 
+            a {
+              color: $text-clr;
+              border-bottom: 2px solid red;
+              padding-bottom: 0.5rem;
             }
-           }
+          }
         }
         .grid-box-2 {
-          border-left: 1px solid $text-clr;
+          border-left: 2px solid $text-clr;
           padding: 2rem 5.3rem;
           grid-row: 1/2;
-          border-right: 1px solid $text-clr;
+          border-right: 2px solid $text-clr;
           margin-inline: auto;
-         
-          
         }
         .grid-box-3 {
-          padding: 2rem ;
+          padding: 2rem;
           margin-inline: auto;
           grid-row: 1/3;
-         
         }
         .grid-box-4 {
           padding: 2rem 5.1rem;
           margin-inline: auto;
           grid-row: 2/3;
-          border-left: 1px solid $text-clr;
-          border-right: 1px solid $text-clr;
-          border-top: 1px solid $text-clr;
+          border-left: 2px solid $text-clr;
+          border-right: 2px solid $text-clr;
+          border-top: 2px solid $text-clr;
         }
         .grid-box-5 {
           width: 650px;
-          padding: 2rem  ;
+          padding: 2rem;
           grid-row: 3/4;
           grid-column: 2/4;
           margin-inline: auto;
-          border-top: 1px solid $text-clr;
-          border-left: 1px solid $text-clr;
-          h3{
+          border-top: 2px solid $text-clr;
+          border-left: 2px solid $text-clr;
+          h3 {
             color: $heading-clr;
             text-transform: uppercase;
             font-family: $primary-font;
             letter-spacing: 2px;
-            font-size:1.5em;
+            font-size: 1.5em;
             line-height: 2rem;
           }
         }
@@ -370,30 +366,139 @@ body {
     }
   }
   // section4
-  .section4{
+  .section4 {
+    width: 100%;
+
+    height: auto;
     text-align: center;
-    h2{
+    h2 {
       font-size: 2em;
       margin-bottom: 1rem;
       text-transform: uppercase;
     }
-    form{
-     input{
-      margin: 2rem;
-      background-color:$primary-clr;
-      border: none;
-      border-bottom: 1px solid $heading-clr;
-      padding-bottom:1rem;
-      font-size: 1em;
-      font-family: $secondary-font;
-     }
-     button{
-      background-color: $primary-clr;
-      border: none;
-      border-bottom: 1px solid red;
-      padding: 0.5rem;
-      color: $text-clr;
-     }
+    form {
+      input {
+        width: 22%;
+        margin: 2rem;
+        background-color: $primary-clr;
+        border: none;
+        border-bottom: 2px solid $heading-clr;
+        padding-bottom: 1rem;
+        font-size: 1em;
+        font-family: $secondary-font;
+      }
+      input:focus-visible {
+        outline: none;
+        color: $heading-clr;
+        font-family: $secondary-font;
+      }
+      input[type="text"]:focus-within {
+        color: $heading-clr;
+      }
+
+      button {
+        background-color: $primary-clr;
+        border: none;
+        border-bottom: 2px solid red;
+        padding: 0.5rem;
+        color: $text-clr;
+      }
+    }
+  }
+
+  // section5
+  .section5 {
+    width: 100%;
+    height: auto;
+    .container {
+      padding-bottom: 0;
+      .flex {
+        justify-content: center;
+        align-items: center;
+        border-top: 2px solid $text-clr;
+        border-bottom: 2px solid $text-clr;
+        .flex-box-1 {
+          flex-basis: 30%;
+          border-right: 2px solid $text-clr;
+          padding: 3.1rem;
+          img {
+            display: block;
+            margin: 0 auto;
+          }
+        }
+        .flex-box-2 {
+          flex-basis: 30%;
+          margin-inline: auto;
+          text-align: center;
+          h3 {
+            color: $heading-clr;
+            text-transform: uppercase;
+            font-family: $primary-font;
+            letter-spacing: 2px;
+            font-size: 1.5em;
+            line-height: 2rem;
+          }
+        }
+        .flex-box-3 {
+          flex-basis: 30%;
+          margin-inline: auto;
+          border-left: 2px solid $text-clr;
+          padding: 2.3rem;
+          img {
+            display: block;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+  // footer
+  footer {
+    width: 100%;
+    height: auto;
+    .container {
+      padding-top: 0;
+      .flex {
+        align-items: center;
+        // justify-content: space-between;
+        border-bottom: 2px solid $text-clr;
+        .flex-box-1 {
+          border-right: 2px solid $text-clr;
+          padding: 1rem;
+          flex-basis: 50%;
+          h4 {
+            font-size: 1.5em;
+            color: $heading-clr;
+            font-family: $primary-font;
+            letter-spacing: 2px;
+            font-weight: normal;
+          }
+        }
+        .flex-box-2 {
+          padding: 1.4rem;
+          flex-basis: 30%;
+          border-right: 2px solid $text-clr;
+          h5 {
+            font-family: $primary-font;
+            letter-spacing: 2px;
+            color: $heading-clr;
+            text-align: right;
+          }
+        }
+        .flex-box-3 {
+          ul {
+            margin-left: 2rem;
+
+            li {
+              display: inline;
+              margin: 0 0.5rem;
+              img {
+                width: 20px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
